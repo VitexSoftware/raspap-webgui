@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=raspap-webgui
+Comment=A web interface to control wifi and hostapd
+Exec=sensible-browser http://localhost/raspap
+Terminal=false
+Type=Application
+Icon=raspap-webgui
+Categories=Web

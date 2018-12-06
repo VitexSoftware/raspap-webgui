@@ -1,0 +1,21 @@
+Source: raspap-webgui
+Section: web
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Uploaders: Vitex <vitex@hippy.cz>
+Homepage: https://github.com/VitexSoftware/raspap-webgui
+Build-Depends: debhelper (>= 10), nodejs
+Standards-Version: 3.9.2
+
+Package: raspap-webgui
+Architecture: all
+Depends: git, hostapd, dnsmasq, vnstat, php, php-cli
+Recommends: apache2 | lighttpd | httpd
+Provides: raspap-webgui
+Description: A simple, responsive web interface to control wifi and hostapd on the Raspberry Pi
+ This project was inspired by a blog post by SirLagz about using a web page 
+ rather than ssh to configure wifi and hostapd settings on the Raspberry Pi. 
+ I mostly just prettified the UI by wrapping it in SB Admin 2, a Bootstrap 
+ based admin theme. Since then, the project has evolved to include greater 
+ control over many aspects of a networked RPi, better security, authentication, 
+ a Quick Installer, support for themes and more. 
